@@ -64,7 +64,7 @@ label { /*estilizando os rótulos*/
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%; /expande para toda área/
+    width: 100%; /*expande para toda área*/
     padding: 10px;
     border: 1px solid #a375ee; /*borda roxa claro*/
     border-radius: 6px; /*borda arrendondada*/
@@ -108,4 +108,26 @@ a {
 a:hover {
     color: #5e2ca5;
     text-decoration: underline;
+}
+
+h2 {
+  color: #2c3e50;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*fontes reservas*/
+  font-size: 26px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+ol {/*lista ordenada*/
+  margin-left: 20px;
+  padding-left: 10px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+li {/*elementos internos*/
+  margin-bottom: 8px;
+  line-height: 1.6;
+  font-size: 16px;
 }
