@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Conectando com o CSS -->
+    <title>Contato</title>
+</head>
+<h1>Contato:</h1>
+<body>
+  <nav class="menu">
+    <ul>
+        <li><a href="sobre.html">Sobre mim</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+    </ul>
+  </nav>
+
+  <form id="formulario" method="post"><!---metodo post por questão de maior segurança--->
+      <!---action é para onde a mensagem será enviado, mas aqui será apenas simulado--->
+      <table>
+          <tr>
+              <th><label for="nome">Nome:</label> <br></th> <!---campo de texto para o nome--->
+              <td><input type="text" id="nome" name="nome" required><br><br></td> <!---required para preenchimento obrigatório
+          label para colocar descrição na área, input para preenchimento-->
+          </tr>
+          <tr>
+              <th><label for="email">E-mail:</label><br></th>
+              <td><input type="email" id="email" name="email" required><br><br></td>
+          </tr>
+          <tr>
+              <th><label for="mensagem">Digite sua mensagem:</label><br></th>
+              <td><textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea><br><br></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td><button type="submit">Enviar</button></td>
+          </tr>
+      </table>  
+  </form>
+
+  <!-- Mensagem de sucesso visível após envio -->
+  <p id="mensagem-sucesso" style="display: none; color: green; font-weight: bold;">
+    Mensagem enviada com sucesso!
+  </p>
+
+  <!-- link do script-->
+  <script src="script.js"></script>
+</body>
+</html>

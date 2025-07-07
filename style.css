@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* fonte principal segoe com fallbacks */
+    background-color: #8232fc;  /*roxo claro*/
+    color: #000; 
+    margin: 0; /* sem margem externa */
+    padding: 40px; /*espaço interno ao redor do conteudo*/
+}
+/* ------------------------------ */
+/* MENU DE NAVEGAÇÃO */
+/* ------------------------------ */
+
+.menu {
+    background-color: #5e2ca5;
+    padding: 12px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #d3b3ff;
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    color: #000; /*titulo em preto*/
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto; /*centraliza automaticamente e na horizontal */
+    background-color: #ffffff; /*cor fundo branco*/
+    padding: 30px; /*espaço interno */
+    border-radius: 12px; /*deixa borda arrendondada*/
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* cria uma sombra */
+}
+
+table {
+    width: 100%; /*tabela ocupa todo o formulário*/
+    border-collapse: collapse; /*retira espaçamento entre células*/
+}
+
+label { /*estilizando os rótulos*/
+    font-weight: 500; /*ajustando o tamanho da fonte e cor*/
+    color: #0000; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /expande para toda área/
+    padding: 10px;
+    border: 1px solid #a375ee; /*borda roxa claro*/
+    border-radius: 6px; /*borda arrendondada*/
+    margin-top: 4px; /*espaçamento superior*/
+    margin-bottom: 16px;  /*espaçamento inferior*/
+    font-size: 16px;
+    background-color: #a182df;/*borda lilas*/
+}
+
+input:focus,
+textarea:focus {
+    border-color: #a084ca;
+    outline: none; /*remove contorno*/
+}
+
+button {
+    background-color: #9b5de6;
+    color: white;
+    padding: 10px 18px; /*padding 10px vertical , 18px horizontal*/
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer; /*muda o cursor ao passar o mouse*/
+    transition: background-color 0.3s ease; /*anima o cursor suavemente*/
+}
+
+button:hover {
+    background-color: #5e2ca5; /*muda o estilo do botão ao passar o mouse*/
+}
+/*Personalizando links*/
+a {
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #8232fc;
+    text-decoration: none;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #5e2ca5;
+    text-decoration: underline;
+}
